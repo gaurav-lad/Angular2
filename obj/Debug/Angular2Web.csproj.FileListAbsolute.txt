@@ -1,0 +1,9 @@
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\obj\Debug\Angular2Web.csprojResolveAssemblyReference.cache
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\bin\Angular2Web.dll.config
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\bin\Angular2Web.dll
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\bin\Angular2Web.pdb
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\obj\Debug\Angular2Web.csproj.CoreCompileInputs.cache
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\obj\Debug\Angular2Web.dll
+C:\gaurav_workbench\DemoWebSite\Angular2Web\Angular2Web\obj\Debug\Angular2Web.pdb

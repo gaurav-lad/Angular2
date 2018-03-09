@@ -10,11 +10,21 @@ var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.pageHeader = "Employee Details";
+        this.classesToApply = 'boldClass italicsClass';
+        this.applyBoldClass = true;
+        this.applyItalicsClass = true;
     }
+    AppComponent.prototype.addClasses = function () {
+        var classes = {
+            boldClass: this.applyBoldClass,
+            italicsClass: this.applyItalicsClass
+        };
+        return classes;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n              </div>"
+            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n                    <br/>\n                    <button class=\"colorClass\" [class]='classesToApply'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [class.boldClass]='applyBoldClass'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [ngClass]='addClasses()'> My Button </button>\n              </div>"
         })
     ], AppComponent);
     return AppComponent;

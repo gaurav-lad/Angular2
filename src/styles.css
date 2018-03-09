@@ -17,3 +17,15 @@ td{
 }
 
 */
+
+.boldClass{
+    font-weight: bold;
+}
+
+.italicsClass{
+    font-style: italic;
+}
+
+.colorClass{
+    color: red;
+}

@@ -13,6 +13,9 @@ var AppComponent = /** @class */ (function () {
         this.classesToApply = 'boldClass italicsClass';
         this.applyBoldClass = true;
         this.applyItalicsClass = true;
+        this.isBold = true;
+        this.fontSize = 30;
+        this.isItalic = true;
     }
     AppComponent.prototype.addClasses = function () {
         var classes = {
@@ -21,10 +24,18 @@ var AppComponent = /** @class */ (function () {
         };
         return classes;
     };
+    AppComponent.prototype.addStyle = function () {
+        var styles = {
+            'font-size.px': this.fontSize,
+            'font-style': this.isItalic ? 'italic' : 'normal',
+            'font-weight': this.isBold ? 'bold' : 'normal'
+        };
+        return styles;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n                    <br/>\n                    <button class=\"colorClass\" [class]='classesToApply'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [class.boldClass]='applyBoldClass'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [ngClass]='addClasses()'> My Button </button>\n              </div>"
+            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n                    <br/>\n                    <button class=\"colorClass\" [class]='classesToApply'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [class.boldClass]='applyBoldClass'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [ngClass]='addClasses()'> My Button </button>\n                    <br/><br/>\n                    <button style='color:red' [style.fontWeight]=\"isBold ? 'bold' : 'normal'\"> My Button4 </button>\n                    <br/><br/>\n                    <button style='color:red' [style.font-size.px]=\"fontSize\"> My Button5 </button>\n                    <br/><br/>\n                    <button style='color:red' [ngStyle]=\"addStyle()\"> My Button6 </button>\n              </div>"
         })
     ], AppComponent);
     return AppComponent;

@@ -1,4 +1,4 @@
-import {Component} from "@angular/core"
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'my-app',
@@ -19,6 +19,14 @@ import {Component} from "@angular/core"
                     <button style='color:red' [ngStyle]="addStyle()"> My Button6 </button>
                     <br/><br/>
                     <button on-click ='onClick()'> Click </button>
+                    <br/><br/>
+                    Name: <input [value]='name' (input)= 'name=$event.target.value'/>
+                    <br/>
+                    You entered : {{name}}
+                    <br/><br/>
+                    Text: <input [(ngModel)] ='name2'>
+                    <br>
+                    You entered : {{name2}}
               </div>`
 })
 
@@ -30,6 +38,8 @@ export class AppComponent {
     isBold: boolean = true;
     fontSize: number = 30;
     isItalic: boolean = true;
+    name: string = 'Tom';
+    name2: string = 'Gaurav';
 
     addClasses() {
         let classes = {

@@ -17,6 +17,8 @@ import {Component} from "@angular/core"
                     <button style='color:red' [style.font-size.px]="fontSize"> My Button5 </button>
                     <br/><br/>
                     <button style='color:red' [ngStyle]="addStyle()"> My Button6 </button>
+                    <br/><br/>
+                    <button on-click ='onClick()'> Click </button>
               </div>`
 })
 
@@ -44,5 +46,9 @@ export class AppComponent {
             'font-weight': this.isBold ? 'bold' : 'normal'
         };
         return styles;
+    }
+
+    onClick(): void {
+        console.log("Button clicked");
     }
 }

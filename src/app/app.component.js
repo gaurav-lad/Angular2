@@ -32,10 +32,13 @@ var AppComponent = /** @class */ (function () {
         };
         return styles;
     };
+    AppComponent.prototype.onClick = function () {
+        console.log("Button clicked");
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n                    <br/>\n                    <button class=\"colorClass\" [class]='classesToApply'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [class.boldClass]='applyBoldClass'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [ngClass]='addClasses()'> My Button </button>\n                    <br/><br/>\n                    <button style='color:red' [style.fontWeight]=\"isBold ? 'bold' : 'normal'\"> My Button4 </button>\n                    <br/><br/>\n                    <button style='color:red' [style.font-size.px]=\"fontSize\"> My Button5 </button>\n                    <br/><br/>\n                    <button style='color:red' [ngStyle]=\"addStyle()\"> My Button6 </button>\n              </div>"
+            template: "<div> \n                    <h1> {{pageHeader}} </h1> \n                    <my-employee></my-employee>\n                    <br/>\n                    <button class=\"colorClass\" [class]='classesToApply'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [class.boldClass]='applyBoldClass'> My Button </button>\n                    <br/><br/>\n                    <button class=\"colorClass\" [ngClass]='addClasses()'> My Button </button>\n                    <br/><br/>\n                    <button style='color:red' [style.fontWeight]=\"isBold ? 'bold' : 'normal'\"> My Button4 </button>\n                    <br/><br/>\n                    <button style='color:red' [style.font-size.px]=\"fontSize\"> My Button5 </button>\n                    <br/><br/>\n                    <button style='color:red' [ngStyle]=\"addStyle()\"> My Button6 </button>\n                    <br/><br/>\n                    <button on-click ='onClick()'> Click </button>\n              </div>"
         })
     ], AppComponent);
     return AppComponent;

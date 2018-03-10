@@ -24,7 +24,7 @@ import { Component } from "@angular/core";
                     <br/>
                     You entered : {{name}}
                     <br/><br/>
-                    Text: <input [(ngModel)] ='name2'>
+                    Text : <input [(ngModel)] ='name2'>
                     <br>
                     You entered : {{name2}}
               </div>`

@@ -28,13 +28,15 @@ import { Component } from "@angular/core";
                     <br/>
                     You entered : {{name2}}
                     <br/><br/>
+                    List Goes Here: 
+                    <br/><br/>
                     <list-employee></list-employee>
                     <br/><br/>
                     Your Name : <input type='text' [(ngModel)]='userText'/>
                     <br/><br/>
                     <simple [simpleInput] = 'userText'></simple>
                     <br/><br/>
-                    Your Name Updated to: {{userText}}
+                    list-employeeYour Name Updated to: {{userText}}
               </div>`
 })
 

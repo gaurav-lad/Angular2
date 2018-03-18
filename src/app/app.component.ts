@@ -29,6 +29,12 @@ import { Component } from "@angular/core";
                     You entered : {{name2}}
                     <br/><br/>
                     <list-employee></list-employee>
+                    <br/><br/>
+                    Your Name : <input type='text' [(ngModel)]='userText'/>
+                    <br/><br/>
+                    <simple [simpleInput] = 'userText'></simple>
+                    <br/><br/>
+                    Your Name Updated to: {{userText}}
               </div>`
 })
 
@@ -42,6 +48,7 @@ export class AppComponent {
     isItalic: boolean = true;
     name: string = 'Tom';
     name2: string = 'Gaurav';
+    userText: string = 'Gaurav Test';
 
     addClasses() {
         let classes = {
